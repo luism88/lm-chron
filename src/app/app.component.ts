@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   
 })
 export class AppComponent {
-  title = 'Hola!';
-  gato = 'Macri gato';
+  title = 'lm-chron';
+  
 }
