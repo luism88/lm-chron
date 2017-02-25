@@ -1,0 +1,21 @@
+<label >{{hours | number : '2.0'}} : {{minutes | number : '2.0'}} : {{seconds | number : '2.0'}}: {{miliseconds | number : '2.0'}}</label>
+<button (click) = 'startPause()' class='{{btnStartClass}}'>{{btnStart}}</button>
+<button (click)="resetLap()" class="btn btn-info">{{btnResetLap}}</button>
+
+<table *ngIf="lstLap.length > 0" class="table">
+<thead>
+    <tr>
+    <th>#</th>
+    <th>Comment</th>
+    <th>Time</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor = "let lap of lstLap">
+        <td>{{lap.position}}</td>
+        <td>{{lap.data}}</td>
+        <td>{{lap.time}}</td>
+    </tr>
+</tbody>
+</table>
+
