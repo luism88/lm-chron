@@ -6,13 +6,11 @@ import { AlertModule } from 'ng2-bootstrap';
 
 import { AppComponent } from './app.component';
 import { TimerComponent } from './timer.component';
-import { LapOutComponent } from './lapOut.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TimerComponent,
-    LapOutComponent,
 
   ],
   imports: [

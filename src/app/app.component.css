@@ -1,3 +1,9 @@
 timer{
     width:50%;
 }
+a{
+    color:white;
+}
+a:hover{
+    color:blue;
+}
